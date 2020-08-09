@@ -5,21 +5,46 @@ using UnityEngine;
 public class PauseScript : MonoBehaviour
 {
 
-    // toggle between pause and resume
-    public void TogglePause()
+    public static bool isPaused = false;
+    public GameObject UIPauseMenu;
+
+    // Start is called before the first frame update
+    void Start()
     {
-        bool isPaused = System.Convert.ToBoolean(Time.timeScale);
-        isPaused = !isPaused;
-        Time.timeScale = System.Convert.ToInt32(isPaused);
+        isPaused = System.Convert.ToBoolean(Time.timeScale);
     }
 
     public void PauseGame()
     {
+        UIPauseMenu.SetActive(true);
         Time.timeScale = 0;
     }
 
     public void ResumeGame()
     {
+        UIPauseMenu.SetActive(false);
         Time.timeScale = 1;
+    }
+
+    // toggle between pause and resume
+    public void TogglePause()
+    {
+        isPaused = !isPaused;
+        if (isPaused)
+            ResumeGame();
+        else
+            PauseGame();
+    }
+
+    public void LoadMainMenu()
+    {
+        ResumeGame();
+        // load main menu here
+    }
+
+    public void QuitGame()
+    {
+        Debug.Log("game quit");
+        Application.Quit();
     }
 }
