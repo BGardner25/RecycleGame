@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PauseScript : MonoBehaviour
 {
@@ -38,8 +39,8 @@ public class PauseScript : MonoBehaviour
 
     public void LoadMainMenu()
     {
-        ResumeGame();
-        // load main menu here
+        SceneManager.LoadScene("MainMenu");
+        Time.timeScale = 1;
     }
 
     public void QuitGame()
