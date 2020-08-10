@@ -13,11 +13,11 @@ public class GameOverScript : MonoBehaviour
         Time.timeScale = 0;
         MainUI.SetActive(false);
         GameOverUI.SetActive(true);
-        // display final score
     }
 
     public void ResetLevel()
     {
+        ScoreDisplay.score = 0;
         GameOverUI.SetActive(false);
         MainUI.SetActive(true);
         // reset level score
