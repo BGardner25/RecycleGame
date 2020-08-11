@@ -11,6 +11,7 @@ public class MainMenu : MonoBehaviour
     // start game from the beginning i.e. level one
     public void StartGame()
     {
+        Time.timeScale = 1;
         ScoreDisplay.score = 0;
         SceneManager.LoadScene("LevelOne");
     }
