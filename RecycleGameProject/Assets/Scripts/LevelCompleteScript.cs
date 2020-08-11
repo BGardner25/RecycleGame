@@ -10,6 +10,12 @@ public class LevelCompleteScript : MonoBehaviour
     public GameObject LevelCompleteUI;
     public Text levelScoreText;
 
+    void Update()
+    {
+        if (ItemManager.levelObjects.Count == 0)
+            LevelComplete();
+    }
+
     // execute on levelcompleted
     public void LevelComplete()
     {
@@ -21,8 +27,8 @@ public class LevelCompleteScript : MonoBehaviour
 
     public void NextLevel()
     {
-        ScoreDisplay.score = 0;
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        ScoreDisplay.score = 0;
         Time.timeScale = 1;
     }
 }

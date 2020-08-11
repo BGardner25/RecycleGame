@@ -20,6 +20,7 @@ public class DepositScript : MonoBehaviour
         if (ClickAndDrag.hasBeenDropped)
         {
             Destroy(other.gameObject);
+            ItemManager.levelObjects.Remove(other.gameObject);
             ScoreDisplay.score += 100;
         }
    }
