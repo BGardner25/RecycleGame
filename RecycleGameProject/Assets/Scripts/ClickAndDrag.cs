@@ -39,10 +39,13 @@ public class ClickAndDrag : MonoBehaviour
     void OnMouseUp()
     {
         hasBeenDropped = true;
-        rigidBody2D.freezeRotation = false;
-        rigidBody2D.gravityScale = 1.0f;
-        gameObject.layer = LayerMask.NameToLayer("RecycleItem");
-        sprite.sortingOrder = 0;
-        transform.position = startPos;
+        if (!DepositScript.isItemCorrect)
+        {
+            rigidBody2D.freezeRotation = false;
+            rigidBody2D.gravityScale = 1.0f;
+            gameObject.layer = LayerMask.NameToLayer("RecycleItem");
+            sprite.sortingOrder = 0;
+            transform.position = startPos;
+        }
     }
 }

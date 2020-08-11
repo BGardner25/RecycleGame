@@ -11,9 +11,10 @@ GameObject:
   - component: {fileID: 3062768561484068347}
   - component: {fileID: 3062768561484068346}
   - component: {fileID: 3819463329600756436}
+  - component: {fileID: 2720762125721805136}
   m_Layer: 0
   m_Name: PaperBin
-  m_TagString: Untagged
+  m_TagString: Paper
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -30,7 +31,7 @@ Transform:
   m_LocalScale: {x: 0.08, y: 0.08, z: 0}
   m_Children: []
   m_Father: {fileID: 7875591270697982326}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &3062768561484068346
 SpriteRenderer:
@@ -106,8 +107,20 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 8.722824, y: 8.499214}
+  m_Size: {x: 6.002358, y: 8.499214}
   m_EdgeRadius: 0
+--- !u!114 &2720762125721805136
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3062768561484068341}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 837a149d2a2809e44ad11b961246ccb6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &3062768561708250982
 GameObject:
   m_ObjectHideFlags: 0
@@ -119,9 +132,10 @@ GameObject:
   - component: {fileID: 3062768561708250980}
   - component: {fileID: 3062768561708250983}
   - component: {fileID: 3189754600267834975}
+  - component: {fileID: 5230710613041819764}
   m_Layer: 0
   m_Name: PlasticBin
-  m_TagString: Untagged
+  m_TagString: Plastic
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -134,11 +148,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3062768561708250982}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.34083605, y: -0.8630395, z: 3848.663}
+  m_LocalPosition: {x: 0.240836, y: -0.8630395, z: 3848.663}
   m_LocalScale: {x: 0.08, y: 0.08, z: 1}
   m_Children: []
   m_Father: {fileID: 7875591270697982326}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &3062768561708250983
 SpriteRenderer:
@@ -214,8 +228,20 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 8.722824, y: 8.499214}
+  m_Size: {x: 6.002358, y: 8.499214}
   m_EdgeRadius: 0
+--- !u!114 &5230710613041819764
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3062768561708250982}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 837a149d2a2809e44ad11b961246ccb6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &3062768561770446351
 GameObject:
   m_ObjectHideFlags: 0
@@ -227,9 +253,10 @@ GameObject:
   - component: {fileID: 3062768561770446349}
   - component: {fileID: 3062768561770446348}
   - component: {fileID: 8840378752674208513}
+  - component: {fileID: 299089144407701918}
   m_Layer: 0
   m_Name: MetalBin
-  m_TagString: Untagged
+  m_TagString: Metal
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -242,11 +269,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3062768561770446351}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2.340836, y: -0.8630395, z: 3848.663}
+  m_LocalPosition: {x: 2.440836, y: -0.8630395, z: 3848.663}
   m_LocalScale: {x: 0.08, y: 0.08, z: 1}
   m_Children: []
   m_Father: {fileID: 7875591270697982326}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &3062768561770446348
 SpriteRenderer:
@@ -322,8 +349,20 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 8.722824, y: 8.499214}
+  m_Size: {x: 6.002358, y: 8.499214}
   m_EdgeRadius: 0
+--- !u!114 &299089144407701918
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3062768561770446351}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 837a149d2a2809e44ad11b961246ccb6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &3062768562258240691
 GameObject:
   m_ObjectHideFlags: 0
@@ -335,9 +374,10 @@ GameObject:
   - component: {fileID: 3062768562258240689}
   - component: {fileID: 3062768562258240688}
   - component: {fileID: 2663899834118236072}
+  - component: {fileID: 3844447661977008541}
   m_Layer: 0
   m_Name: GlassBin
-  m_TagString: Untagged
+  m_TagString: Glass
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -350,11 +390,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3062768562258240691}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 3.340836, y: -0.8630395, z: 3848.663}
+  m_LocalPosition: {x: 3.540836, y: -0.8630395, z: 3848.663}
   m_LocalScale: {x: 0.08, y: 0.08, z: 1}
   m_Children: []
   m_Father: {fileID: 7875591270697982326}
-  m_RootOrder: 2
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &3062768562258240688
 SpriteRenderer:
@@ -430,8 +470,20 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 8.722824, y: 8.499214}
+  m_Size: {x: 6.002358, y: 8.499214}
   m_EdgeRadius: 0
+--- !u!114 &3844447661977008541
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3062768562258240691}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 837a149d2a2809e44ad11b961246ccb6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &3062768563446669444
 GameObject:
   m_ObjectHideFlags: 0
@@ -443,9 +495,10 @@ GameObject:
   - component: {fileID: 3062768563446669450}
   - component: {fileID: 3062768563446669445}
   - component: {fileID: 4817204040618957430}
+  - component: {fileID: 4987090913676657945}
   m_Layer: 0
   m_Name: GeneralWaste
-  m_TagString: Untagged
+  m_TagString: GeneralWaste
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -458,11 +511,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3062768563446669444}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.65916395, y: -0.8630395, z: 3848.663}
+  m_LocalPosition: {x: -0.859164, y: -0.8630395, z: 3848.663}
   m_LocalScale: {x: 0.08, y: 0.08, z: 1}
   m_Children: []
   m_Father: {fileID: 7875591270697982326}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &3062768563446669445
 SpriteRenderer:
@@ -527,7 +580,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.08189392, y: -1.433704}
+  m_Offset: {x: -0.081891775, y: -1.4337039}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -538,8 +591,20 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 8.722824, y: 8.499214}
+  m_Size: {x: 6.002358, y: 8.499214}
   m_EdgeRadius: 0
+--- !u!114 &4987090913676657945
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3062768563446669444}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 837a149d2a2809e44ad11b961246ccb6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &5064887277578642418
 GameObject:
   m_ObjectHideFlags: 0
@@ -567,11 +632,11 @@ Transform:
   m_LocalPosition: {x: -1.390836, y: -2.1169605, z: -3848.663}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 3062768561708250980}
   - {fileID: 3062768563446669450}
-  - {fileID: 3062768562258240689}
+  - {fileID: 3062768561708250980}
   - {fileID: 3062768561484068347}
   - {fileID: 3062768561770446349}
+  - {fileID: 3062768562258240689}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
