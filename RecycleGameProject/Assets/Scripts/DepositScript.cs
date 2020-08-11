@@ -5,6 +5,7 @@ using UnityEngine;
 public class DepositScript : MonoBehaviour
 {
     public static bool isItemCorrect = false;
+    public HealthBarScript healthBar;
 
     void OnTriggerEnter2D(Collider2D other)
     {
@@ -27,9 +28,9 @@ public class DepositScript : MonoBehaviour
 
     void OnTriggerExit2D(Collider2D other)
     {
-        if(ClickAndDrag.hasBeenDropped)
-            if(!isItemCorrect)
-                ScoreDisplay.score -= 100;                  // remove lives here
+        if (ClickAndDrag.hasBeenDropped)
+            if (!isItemCorrect)
+                healthBar.RemoveHealth();                  // remove lives here
         isItemCorrect = false;
     }
 }

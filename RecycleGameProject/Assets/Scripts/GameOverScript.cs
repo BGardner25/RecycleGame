@@ -7,10 +7,20 @@ public class GameOverScript : MonoBehaviour
 {
     public GameObject MainUI;
     public GameObject GameOverUI;
+    public HealthBarScript healthBar;
+
+    void Update()
+    {
+        if (healthBar.GetHealthCount() == 0)
+        {
+            GameOver();
+        }
+    }
 
     public void GameOver()
     {
         Time.timeScale = 0;
+        healthBar.ResetHealthCount();
         MainUI.SetActive(false);
         GameOverUI.SetActive(true);
     }

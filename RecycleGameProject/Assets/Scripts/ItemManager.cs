@@ -11,8 +11,6 @@ public class ItemManager : MonoBehaviour
     {
         levelObjects = new List<GameObject>();
         foreach (Transform child in transform)
-        {
             levelObjects.Add(child.gameObject);
-        }
     }
 }
