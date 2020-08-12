@@ -55,7 +55,8 @@ public class HealthBarScript : MonoBehaviour
 
     public void RemoveHealth()
     {
-        screenShake.ScreenShake();
+        if(count > 1)
+            screenShake.ScreenShake();
         //Instantiate(fallingHeart, healthBar[count - 1].transform.position, Quaternion.identity);
         isHeartsFalling[count - 1] = true;
         healthBar[count - 1].GetComponent<Image>().sprite = greyHeart;
