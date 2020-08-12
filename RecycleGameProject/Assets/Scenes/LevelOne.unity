@@ -2831,7 +2831,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 0.2
+  m_Mass: 0.1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 1
@@ -4180,7 +4180,7 @@ GameObject:
   - component: {fileID: 1024030133}
   m_Layer: 0
   m_Name: RecycleItems
-  m_TagString: Untagged
+  m_TagString: RecycleItem
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5586,7 +5586,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: -8331190664533850165, guid: f4074e5c238b5f244a09edaaf04d1a6b,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -9231,6 +9231,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8693615397534819034, guid: 4539f98dae67eb1479b03136e4dc7f12,
+        type: 3}
+      propertyPath: m_FlowVariation
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8693615397534819034, guid: 4539f98dae67eb1479b03136e4dc7f12,
+        type: 3}
+      propertyPath: m_LinearDrag
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8693615397534819034, guid: 4539f98dae67eb1479b03136e4dc7f12,
+        type: 3}
+      propertyPath: m_FlowMagnitude
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9220600339105892757, guid: 4539f98dae67eb1479b03136e4dc7f12,
         type: 3}

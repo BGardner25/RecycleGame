@@ -9,6 +9,7 @@ TagManager:
   - Paper
   - Metal
   - Glass
+  - RecycleItem
   layers:
   - Default
   - TransparentFX
