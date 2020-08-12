@@ -6,6 +6,7 @@ public class DepositScript : MonoBehaviour
 {
     public static bool isItemCorrect = false;
     public HealthBarScript healthBar;
+    public DisplayResultAnimation displayAnimation;
 
     void OnTriggerEnter2D(Collider2D other)
     {
@@ -21,6 +22,7 @@ public class DepositScript : MonoBehaviour
         if (ClickAndDrag.hasBeenDropped)
         {
             Destroy(other.gameObject);
+            displayAnimation.DisplayCorrectAnim(transform.position);
             ItemManager.levelObjects.Remove(other.gameObject);
             ScoreDisplay.score += 100;
         }
@@ -30,7 +32,10 @@ public class DepositScript : MonoBehaviour
     {
         if (ClickAndDrag.hasBeenDropped)
             if (!isItemCorrect)
-                healthBar.RemoveHealth();                  // remove lives here
+            {
+                displayAnimation.DisplayIncorrectanim(transform.position);
+                healthBar.RemoveHealth();
+            }
         isItemCorrect = false;
     }
 }

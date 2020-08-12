@@ -1,5 +1,52 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &3532577705406358376
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4341487689064590314}
+  - component: {fileID: 6218378713800980822}
+  m_Layer: 0
+  m_Name: GameManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4341487689064590314
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3532577705406358376}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 299.84357, y: 169.75671, z: 3849.1494}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4615273886145852942}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6218378713800980822
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3532577705406358376}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 97082152db1de8d4593720c391400d32, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  correctAnim: {fileID: 8588749709983937060, guid: f9b188d8b19edf64682cd4159ad687bb,
+    type: 3}
+  incorrectAnim: {fileID: 8699119707264219920, guid: 024447a380a7bbd4a9a0f8f1e97f2638,
+    type: 3}
 --- !u!1 &7227949676275410748
 GameObject:
   m_ObjectHideFlags: 0
@@ -30,6 +77,7 @@ Transform:
   - {fileID: 71234381024713079}
   - {fileID: 891382781863313141}
   - {fileID: 2654736342637643733}
+  - {fileID: 4341487689064590314}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -120,11 +168,21 @@ PrefabInstance:
       propertyPath: healthBar
       value: 
       objectReference: {fileID: 5781632027268928276}
+    - target: {fileID: 299089144407701918, guid: 31d72e28b5f506b41a7fed29dfe9f475,
+        type: 3}
+      propertyPath: displayAnimation
+      value: 
+      objectReference: {fileID: 6218378713800980822}
     - target: {fileID: 2720762125721805136, guid: 31d72e28b5f506b41a7fed29dfe9f475,
         type: 3}
       propertyPath: healthBar
       value: 
       objectReference: {fileID: 5781632027268928276}
+    - target: {fileID: 2720762125721805136, guid: 31d72e28b5f506b41a7fed29dfe9f475,
+        type: 3}
+      propertyPath: displayAnimation
+      value: 
+      objectReference: {fileID: 6218378713800980822}
     - target: {fileID: 3062768561484068346, guid: 31d72e28b5f506b41a7fed29dfe9f475,
         type: 3}
       propertyPath: m_SortingOrder
@@ -155,6 +213,11 @@ PrefabInstance:
       propertyPath: healthBar
       value: 
       objectReference: {fileID: 5781632027268928276}
+    - target: {fileID: 3844447661977008541, guid: 31d72e28b5f506b41a7fed29dfe9f475,
+        type: 3}
+      propertyPath: displayAnimation
+      value: 
+      objectReference: {fileID: 6218378713800980822}
     - target: {fileID: 4817204040618957430, guid: 31d72e28b5f506b41a7fed29dfe9f475,
         type: 3}
       propertyPath: m_IsTrigger
@@ -165,6 +228,11 @@ PrefabInstance:
       propertyPath: healthBar
       value: 
       objectReference: {fileID: 5781632027268928276}
+    - target: {fileID: 4987090913676657945, guid: 31d72e28b5f506b41a7fed29dfe9f475,
+        type: 3}
+      propertyPath: displayAnimation
+      value: 
+      objectReference: {fileID: 6218378713800980822}
     - target: {fileID: 5064887277578642418, guid: 31d72e28b5f506b41a7fed29dfe9f475,
         type: 3}
       propertyPath: m_Name
@@ -175,6 +243,11 @@ PrefabInstance:
       propertyPath: healthBar
       value: 
       objectReference: {fileID: 5781632027268928276}
+    - target: {fileID: 5230710613041819764, guid: 31d72e28b5f506b41a7fed29dfe9f475,
+        type: 3}
+      propertyPath: displayAnimation
+      value: 
+      objectReference: {fileID: 6218378713800980822}
     - target: {fileID: 7875591270697982326, guid: 31d72e28b5f506b41a7fed29dfe9f475,
         type: 3}
       propertyPath: m_LocalPosition.x
