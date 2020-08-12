@@ -3747,6 +3747,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   healthBar: []
   greyHeart: {fileID: 21300000, guid: f313afbb12e7d294e94320bb7231d164, type: 3}
+  redHeart: {fileID: 21300000, guid: 40578a922534724448ad98fd665b4d17, type: 3}
+  screenShake: {fileID: 0}
 --- !u!1 &7802164512510213484
 GameObject:
   m_ObjectHideFlags: 0

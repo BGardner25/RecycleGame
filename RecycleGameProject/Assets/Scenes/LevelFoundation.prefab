@@ -328,6 +328,11 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3684336326244710303, guid: f186009d91271bf4f89727bdb0be4253,
+        type: 3}
+      propertyPath: screenShake
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 4387891985218381552, guid: f186009d91271bf4f89727bdb0be4253,
         type: 3}
       propertyPath: m_AnchoredPosition.y
