@@ -40,7 +40,7 @@ public class HealthBarScript : MonoBehaviour
         for(int i = isHeartsFalling.Length - 1; i > 0; i--)
             if (isHeartsFalling[i])
                 if (fallingHearts[i].transform.position.y >= -40.0f)
-                    fallingHearts[i].transform.Translate(0.0f, -1.0f, 0.0f);
+                    fallingHearts[i].transform.Translate(0.0f, -3.0f, 0.0f);
     }
 
     public int GetHealthCount()
