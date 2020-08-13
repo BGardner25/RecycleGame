@@ -9131,6 +9131,36 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2500852216326776456, guid: 4539f98dae67eb1479b03136e4dc7f12,
+        type: 3}
+      propertyPath: soundArr.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2500852216326776456, guid: 4539f98dae67eb1479b03136e4dc7f12,
+        type: 3}
+      propertyPath: soundArr.Array.data[1].pitch
+      value: 0.55
+      objectReference: {fileID: 0}
+    - target: {fileID: 2500852216326776456, guid: 4539f98dae67eb1479b03136e4dc7f12,
+        type: 3}
+      propertyPath: soundArr.Array.data[2].name
+      value: PickUpItem
+      objectReference: {fileID: 0}
+    - target: {fileID: 2500852216326776456, guid: 4539f98dae67eb1479b03136e4dc7f12,
+        type: 3}
+      propertyPath: soundArr.Array.data[2].audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 399e983ba09f5d14c9269bbe934ff0ff, type: 3}
+    - target: {fileID: 2500852216326776456, guid: 4539f98dae67eb1479b03136e4dc7f12,
+        type: 3}
+      propertyPath: soundArr.Array.data[2].volume
+      value: 0.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 2500852216326776456, guid: 4539f98dae67eb1479b03136e4dc7f12,
+        type: 3}
+      propertyPath: soundArr.Array.data[2].pitch
+      value: 0.55
+      objectReference: {fileID: 0}
     - target: {fileID: 3485889233862801858, guid: 4539f98dae67eb1479b03136e4dc7f12,
         type: 3}
       propertyPath: m_IsTrigger
