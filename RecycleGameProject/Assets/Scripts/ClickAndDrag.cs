@@ -21,6 +21,7 @@ public class ClickAndDrag : MonoBehaviour
         hasBeenDropped = false;
         // store original pos
         startPos = transform.position;
+        FindObjectOfType<AudioManagerScript>().PlaySound("PickUpItem");
         // freeze item under mouse cursor
         rigidBody2D.freezeRotation = true;
         rigidBody2D.gravityScale = 0.0f;
@@ -46,6 +47,7 @@ public class ClickAndDrag : MonoBehaviour
             gameObject.layer = LayerMask.NameToLayer("RecycleItem");
             sprite.sortingOrder = 0;
             transform.position = startPos;
+            FindObjectOfType<AudioManagerScript>().PlaySound("DropItem");
         }
     }
 }

@@ -129,7 +129,7 @@ GameObject:
   - component: {fileID: 2347599119897566536}
   - component: {fileID: 2347599119897566537}
   m_Layer: 5
-  m_Name: Canvas
+  m_Name: SettingsUI
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -673,6 +673,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7b91f63a8e933eb459ea64c9834ab889, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  volumeSlider: {fileID: 2347599120466025173}
   audioMixer: {fileID: 24100000, guid: f14b43abcd78db04cb47ef487450ea23, type: 2}
 --- !u!1 &2347599120466025171
 GameObject:
@@ -759,10 +760,10 @@ MonoBehaviour:
   m_FillRect: {fileID: 2347599121078425046}
   m_HandleRect: {fileID: 2347599119700123761}
   m_Direction: 0
-  m_MinValue: -80
-  m_MaxValue: 0
+  m_MinValue: 0.0001
+  m_MaxValue: 1
   m_WholeNumbers: 0
-  m_Value: 0
+  m_Value: 1
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
@@ -1214,6 +1215,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1368022378712605953, guid: 89717881941650042b64aae871cad502,
+        type: 3}
+      propertyPath: m_MaxValue
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1368022378712605953, guid: 89717881941650042b64aae871cad502,
+        type: 3}
+      propertyPath: m_MinValue
+      value: 0.0001
+      objectReference: {fileID: 0}
+    - target: {fileID: 1368022378712605953, guid: 89717881941650042b64aae871cad502,
+        type: 3}
+      propertyPath: m_Value
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1368022378809196065, guid: 89717881941650042b64aae871cad502,
         type: 3}
