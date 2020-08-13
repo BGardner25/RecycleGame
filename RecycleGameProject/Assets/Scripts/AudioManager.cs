@@ -35,6 +35,7 @@ public class AudioManager : MonoBehaviour
     void Start()
     {
         PlaySound("River");
+        PlaySound("Forest");
     }
 
     public void PlaySound(string name)

@@ -72,6 +72,12 @@ MonoBehaviour:
   - name: River
     audioClip: {fileID: 8300000, guid: 6c3d85ccb8a4a9344918352654f24cae, type: 3}
     aSrc: {fileID: 0}
-    volume: 1
+    volume: 0.7
+    pitch: 1
+    loop: 1
+  - name: Forest
+    audioClip: {fileID: 8300000, guid: ac710808f32d8c84583cd901313be172, type: 3}
+    aSrc: {fileID: 0}
+    volume: 0.4
     pitch: 1
     loop: 1
