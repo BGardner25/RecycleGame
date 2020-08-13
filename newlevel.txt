@@ -1,0 +1,12 @@
+camera
+1.52039
+
+Level foundation
+0.2104194
+-0.018219
+
+On new level:
+1. put recycle items in recycleitems section
+2. attach clickanddrag script to each recycle item
+3. put screen shake on camera
+4. reference camera object in lives script for screenshake

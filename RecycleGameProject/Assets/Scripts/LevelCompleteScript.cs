@@ -11,6 +11,11 @@ public class LevelCompleteScript : MonoBehaviour
     public Text levelScoreText;
     private bool isCompleted = false;
 
+    void Awake()
+    {
+        isCompleted = false;
+    }
+
     void Update()
     {
         if(!isCompleted)
@@ -35,7 +40,6 @@ public class LevelCompleteScript : MonoBehaviour
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         ScoreDisplay.score = 0;
-        isCompleted = false;
         Time.timeScale = 1;
     }
 }
