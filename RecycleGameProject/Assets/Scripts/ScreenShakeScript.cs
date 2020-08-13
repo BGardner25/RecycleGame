@@ -18,7 +18,7 @@ public class ScreenShakeScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(shakeTime > 0)
+        if(shakeTime > 0 && Time.timeScale != 0)
         {
             transform.localPosition = startPos + Random.insideUnitSphere * magnitude;
             shakeTime -= Time.deltaTime * damping;

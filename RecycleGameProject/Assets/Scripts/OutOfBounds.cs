@@ -10,7 +10,8 @@ public class OutOfBounds : MonoBehaviour
     {
         if(other.transform.parent.tag == "RecycleItem")
         {
-            Destroy(other.gameObject);
+            FindObjectOfType<AudioManager>().PlaySound("EndOfRiver");
+            FindObjectOfType<ItemManager>().DestroyItem(other.gameObject);
             healthBar.RemoveHealth();
         }
 

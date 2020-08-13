@@ -18,36 +18,45 @@ public class ClickAndDrag : MonoBehaviour
     // setup object for pickup
     void OnMouseDown()
     {
-        hasBeenDropped = false;
-        // store original pos
-        startPos = transform.position;
-        FindObjectOfType<AudioManagerScript>().PlaySound("PickUpItem");
-        // freeze item under mouse cursor
-        rigidBody2D.freezeRotation = true;
-        rigidBody2D.gravityScale = 0.0f;
-        gameObject.layer = LayerMask.NameToLayer("HeldItem");
-        sprite.sortingOrder = 1;
+        if (Time.timeScale != 0)
+        {
+            hasBeenDropped = false;
+            // store original pos
+            startPos = transform.position;
+            FindObjectOfType<AudioManager>().PlaySound("PickUpItem");
+            // freeze item under mouse cursor
+            rigidBody2D.freezeRotation = true;
+            rigidBody2D.gravityScale = 0.0f;
+            gameObject.layer = LayerMask.NameToLayer("HeldItem");
+            sprite.sortingOrder = 1;
+        }
     }
 
     // set object to mouse cursor pos
     void OnMouseDrag()
     {
-        Vector2 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-        transform.position = new Vector2(mousePos.x, mousePos.y);
+        if (Time.timeScale != 0)
+        {
+            Vector2 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+            transform.position = new Vector2(mousePos.x, mousePos.y);
+        }
     }
 
     // reset object
     void OnMouseUp()
     {
-        hasBeenDropped = true;
-        if (!DepositScript.isItemCorrect)
+        if (Time.timeScale != 0)
         {
-            rigidBody2D.freezeRotation = false;
-            rigidBody2D.gravityScale = 1.0f;
-            gameObject.layer = LayerMask.NameToLayer("RecycleItem");
-            sprite.sortingOrder = 0;
-            transform.position = startPos;
-            FindObjectOfType<AudioManagerScript>().PlaySound("DropItem");
+            hasBeenDropped = true;
+            if (!DepositScript.isItemCorrect)
+            {
+                rigidBody2D.freezeRotation = false;
+                rigidBody2D.gravityScale = 1.0f;
+                gameObject.layer = LayerMask.NameToLayer("RecycleItem");
+                sprite.sortingOrder = 0;
+                transform.position = startPos;
+                FindObjectOfType<AudioManager>().PlaySound("DropItem");
+            }
         }
     }
 }

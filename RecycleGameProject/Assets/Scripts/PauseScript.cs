@@ -15,15 +15,17 @@ public class PauseScript : MonoBehaviour
         isPaused = System.Convert.ToBoolean(Time.timeScale);
     }
 
-    public void PauseGame()
+    public void PauseGame(bool enablePauseMenu = true)
     {
-        UIPauseMenu.SetActive(true);
+        UIPauseMenu.SetActive(enablePauseMenu);
+        FindObjectOfType<AudioManager>().Pause();
         Time.timeScale = 0;
     }
 
     public void ResumeGame()
     {
         UIPauseMenu.SetActive(false);
+        FindObjectOfType<AudioManager>().Resume();
         Time.timeScale = 1;
     }
 
@@ -45,7 +47,6 @@ public class PauseScript : MonoBehaviour
 
     public void QuitGame()
     {
-        Debug.Log("game quit");
         Application.Quit();
     }
 }

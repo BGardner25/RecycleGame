@@ -9,16 +9,22 @@ public class LevelCompleteScript : MonoBehaviour
     public GameObject MainUI;
     public GameObject LevelCompleteUI;
     public Text levelScoreText;
+    private bool isCompleted = false;
 
     void Update()
     {
-        if (ItemManager.levelObjects.Count == 0)
-            LevelComplete();
+        if(!isCompleted)
+            if (FindObjectOfType<ItemManager>().GetLevelObjectCount() == 0)
+                LevelComplete();
     }
 
     // execute on levelcompleted
     public void LevelComplete()
     {
+        foreach (AudioSource aS in FindObjectsOfType(typeof(AudioSource)) as AudioSource[])
+            aS.Stop();
+        FindObjectOfType<AudioManager>().PlaySound("LevelComplete");
+        isCompleted = true;
         Time.timeScale = 0;
         MainUI.SetActive(false);
         LevelCompleteUI.SetActive(true);
@@ -29,6 +35,7 @@ public class LevelCompleteScript : MonoBehaviour
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         ScoreDisplay.score = 0;
+        isCompleted = false;
         Time.timeScale = 1;
     }
 }

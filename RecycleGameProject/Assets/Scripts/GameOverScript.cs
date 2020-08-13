@@ -19,7 +19,7 @@ public class GameOverScript : MonoBehaviour
 
     public void GameOver()
     {
-        Time.timeScale = 0;
+        FindObjectOfType<PauseScript>().PauseGame(false);
         healthBar.ResetHealthCount();
         MainUI.SetActive(false);
         GameOverUI.SetActive(true);
@@ -32,6 +32,6 @@ public class GameOverScript : MonoBehaviour
         MainUI.SetActive(true);
         // reset level score
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
-        Time.timeScale = 1;
+        FindObjectOfType<PauseScript>().ResumeGame();
     }
 }

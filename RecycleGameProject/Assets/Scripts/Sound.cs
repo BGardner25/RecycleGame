@@ -15,4 +15,5 @@ public class Sound
     [Range(0.1f, 2.0f)]
     public float pitch = 1.0f;
 
+    public bool loop;
 }

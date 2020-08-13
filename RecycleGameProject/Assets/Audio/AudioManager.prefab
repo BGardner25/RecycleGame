@@ -1,0 +1,77 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &510111562280918857
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3175099045280180247}
+  - component: {fileID: 379541500387020465}
+  m_Layer: 0
+  m_Name: AudioManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3175099045280180247
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 510111562280918857}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.024580821, y: 0.0054605007, z: 3849.1494}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &379541500387020465
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 510111562280918857}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6538475e95c21a647a68f4de3a48f63c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioMixer: {fileID: 24300002, guid: f14b43abcd78db04cb47ef487450ea23, type: 2}
+  soundArr:
+  - name: DropItem
+    audioClip: {fileID: 8300000, guid: a189571161214e84b89550f60564701c, type: 3}
+    aSrc: {fileID: 0}
+    volume: 1
+    pitch: 1
+    loop: 0
+  - name: PickUpItem
+    audioClip: {fileID: 8300000, guid: 399e983ba09f5d14c9269bbe934ff0ff, type: 3}
+    aSrc: {fileID: 0}
+    volume: 0.6
+    pitch: 0.55
+    loop: 0
+  - name: EndOfRiver
+    audioClip: {fileID: 8300000, guid: 3b652b04a9971114b8b56f730df367b2, type: 3}
+    aSrc: {fileID: 0}
+    volume: 1
+    pitch: 0.5
+    loop: 0
+  - name: LevelComplete
+    audioClip: {fileID: 8300000, guid: 2014baa1d5750124ebe6c3e36e2ac2c4, type: 3}
+    aSrc: {fileID: 0}
+    volume: 1
+    pitch: 1
+    loop: 0
+  - name: River
+    audioClip: {fileID: 8300000, guid: 6c3d85ccb8a4a9344918352654f24cae, type: 3}
+    aSrc: {fileID: 0}
+    volume: 1
+    pitch: 1
+    loop: 1

@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class ItemManager : MonoBehaviour
 {
-    public static List<GameObject> levelObjects;
+    public List<GameObject> levelObjects;
 
     // Start is called before the first frame update
     void Start()
@@ -12,5 +12,16 @@ public class ItemManager : MonoBehaviour
         levelObjects = new List<GameObject>();
         foreach (Transform child in transform)
             levelObjects.Add(child.gameObject);
+    }
+
+    public void DestroyItem(GameObject gObject)
+    {
+        Destroy(gObject);
+        levelObjects.Remove(gObject);
+    }
+
+    public int GetLevelObjectCount()
+    {
+        return levelObjects.Count;
     }
 }
