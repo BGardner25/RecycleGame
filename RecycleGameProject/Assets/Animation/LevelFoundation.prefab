@@ -1,5 +1,17 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &2627906513351785792
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1965224761373356709}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d978da81239d73c4d8e16a4a1415c0d5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2800223005978036272
 GameObject:
   m_ObjectHideFlags: 0
@@ -279,18 +291,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   healthBar: {fileID: 5441625411142925757}
---- !u!114 &2627906513351785792
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1965224761373356709}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d978da81239d73c4d8e16a4a1415c0d5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &9220600339105892757
 GameObject:
   m_ObjectHideFlags: 0
@@ -419,6 +419,26 @@ PrefabInstance:
         type: 3}
       propertyPath: m_SortingOrder
       value: -2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4724706545768028314, guid: 0a0708e3c0b57244a865cf9073f6e593,
+        type: 3}
+      propertyPath: m_Offset.x
+      value: -3.512083
+      objectReference: {fileID: 0}
+    - target: {fileID: 4724706545768028314, guid: 0a0708e3c0b57244a865cf9073f6e593,
+        type: 3}
+      propertyPath: m_Offset.y
+      value: -0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4724706545768028314, guid: 0a0708e3c0b57244a865cf9073f6e593,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 18.02417
+      objectReference: {fileID: 0}
+    - target: {fileID: 4724706545768028314, guid: 0a0708e3c0b57244a865cf9073f6e593,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 1.0999999
       objectReference: {fileID: 0}
     - target: {fileID: 4724706545772150309, guid: 0a0708e3c0b57244a865cf9073f6e593,
         type: 3}
