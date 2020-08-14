@@ -28,7 +28,7 @@ public class ClickAndDrag : MonoBehaviour
             rigidBody2D.freezeRotation = true;
             rigidBody2D.gravityScale = 0.0f;
             gameObject.layer = LayerMask.NameToLayer("HeldItem");
-            sprite.sortingOrder = 1;
+            sprite.sortingOrder = 3;
         }
     }
 
@@ -53,7 +53,7 @@ public class ClickAndDrag : MonoBehaviour
                 rigidBody2D.freezeRotation = false;
                 rigidBody2D.gravityScale = 1.0f;
                 gameObject.layer = LayerMask.NameToLayer("RecycleItem");
-                sprite.sortingOrder = 0;
+                sprite.sortingOrder = 2;
                 transform.position = startPos;
                 FindObjectOfType<AudioManager>().PlaySound("DropItem");
             }

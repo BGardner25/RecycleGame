@@ -22,6 +22,8 @@ public class DepositScript : MonoBehaviour
         if (ClickAndDrag.hasBeenDropped)
         {
             FindObjectOfType<ItemManager>().DestroyItem(other.gameObject);
+            if (TutorialManager.isTutorialActive)
+                FindObjectOfType<TutorialManager>().RemoveTutorialMessage(other.gameObject.tag);
             displayAnimation.DisplayCorrectAnim(transform.position);
             ScoreDisplay.score += 100;
         }

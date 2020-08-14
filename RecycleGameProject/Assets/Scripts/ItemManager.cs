@@ -24,4 +24,16 @@ public class ItemManager : MonoBehaviour
     {
         return levelObjects.Count;
     }
+
+    public void FreezeAllItems()
+    {
+        foreach(GameObject gObject in levelObjects)
+            gObject.GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezePositionX | RigidbodyConstraints2D.FreezePositionY;
+    }
+
+    public void UnfreezeAllItems()
+    {
+        foreach (GameObject gObject in levelObjects)
+            gObject.GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.None;
+    }
 }
