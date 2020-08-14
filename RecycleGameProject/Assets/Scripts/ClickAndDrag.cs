@@ -20,6 +20,7 @@ public class ClickAndDrag : MonoBehaviour
     {
         if (Time.timeScale != 0)
         {
+            Debug.Log("called");
             hasBeenDropped = false;
             // store original pos
             startPos = transform.position;
@@ -28,7 +29,7 @@ public class ClickAndDrag : MonoBehaviour
             rigidBody2D.freezeRotation = true;
             rigidBody2D.gravityScale = 0.0f;
             gameObject.layer = LayerMask.NameToLayer("HeldItem");
-            sprite.sortingOrder = 3;
+            sprite.sortingOrder = 4;
         }
     }
 

@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 6164539001464841283}
   - component: {fileID: 6164539001464841282}
   - component: {fileID: 749913089531683380}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: PaperBag
   m_TagString: Paper
   m_Icon: {fileID: 0}

@@ -10,7 +10,7 @@ public class TutorialManager : MonoBehaviour
     public GameObject TutorialPanel;
     public List<GameObject> tutMessages;
 
-    void Awake()
+    void Start()
     {
         isTutorialActive = false;
     }

@@ -28,7 +28,7 @@ public class ItemManager : MonoBehaviour
     public void FreezeAllItems()
     {
         foreach(GameObject gObject in levelObjects)
-            gObject.GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezePositionX | RigidbodyConstraints2D.FreezePositionY;
+            gObject.GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezePositionX | RigidbodyConstraints2D.FreezePositionY | RigidbodyConstraints2D.FreezeRotation;
     }
 
     public void UnfreezeAllItems()

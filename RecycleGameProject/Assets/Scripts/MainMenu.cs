@@ -13,7 +13,7 @@ public class MainMenu : MonoBehaviour
     {
         Time.timeScale = 1;
         ScoreDisplay.score = 0;
-        SceneManager.LoadScene("LevelOne");
+        SceneManager.LoadScene("Level01");
     }
 
     public void QuitGame()

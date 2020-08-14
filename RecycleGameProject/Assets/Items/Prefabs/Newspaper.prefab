@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 7706816856662381893}
   - component: {fileID: 7706816856662381892}
   - component: {fileID: 980446161862383541}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Newspaper
   m_TagString: Paper
   m_Icon: {fileID: 0}
