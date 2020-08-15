@@ -23,7 +23,7 @@ public class DepositScript : MonoBehaviour
         {
             FindObjectOfType<ItemManager>().DestroyItem(other.gameObject);
             if (TutorialManager.isTutorialActive)
-                FindObjectOfType<TutorialManager>().RemoveTutorialMessage(other.gameObject.tag);
+                FindObjectOfType<TutorialManager>().RemoveTutorialMessage(other.gameObject);
             displayAnimation.DisplayCorrectAnim(transform.position);
             ScoreDisplay.score += 100;
         }

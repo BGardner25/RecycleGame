@@ -17,9 +17,14 @@ public class TutorialManager : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D other)
     {
+        string tag = "";
+        if (other.gameObject.tag == "GeneralWaste")
+            tag = other.gameObject.name;
+        else
+             tag = other.gameObject.tag;
         foreach (GameObject tutObject in tutMessages)
         {
-            if (tutObject.tag == other.gameObject.tag)
+            if (tutObject.tag == tag)
             {
                 DisplayTutorial(tutObject);
             }
@@ -36,9 +41,13 @@ public class TutorialManager : MonoBehaviour
         tutObject.SetActive(true);
     }
 
-    public void RemoveTutorialMessage(string tag)
+    public void RemoveTutorialMessage(GameObject gObject)
     {
+        string tag = gObject.tag;
         foreach (GameObject tutObject in tutMessages)
+        {
+            if (string.Equals("GeneralWaste", tag, System.StringComparison.OrdinalIgnoreCase))
+                tag = gObject.transform.name;
             if (string.Equals(tutObject.tag, tag, System.StringComparison.OrdinalIgnoreCase))
             {
                 tutObject.SetActive(false);
@@ -50,5 +59,6 @@ public class TutorialManager : MonoBehaviour
                 mainUI.SetMainUIVisibility(true);
                 return;
             }
+        }
     }
 }

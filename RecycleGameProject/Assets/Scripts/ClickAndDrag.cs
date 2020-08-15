@@ -21,7 +21,6 @@ public class ClickAndDrag : MonoBehaviour
     {
         if (Time.timeScale != 0)
         {
-            Debug.Log("called");
             hasBeenDropped = false;
             // store original pos
             startPos = transform.position;

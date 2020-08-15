@@ -10,6 +10,11 @@ TagManager:
   - Metal
   - Glass
   - RecycleItem
+  - NoRecycle
+  - Ceramic
+  - Polystyrene
+  - Dirty
+  - BlackPlastic
   layers:
   - Default
   - TransparentFX
@@ -44,9 +49,6 @@ TagManager:
   - 
   - 
   m_SortingLayers:
-  - name: ItemLayer
-    uniqueID: 2377070467
-    locked: 0
   - name: Default
     uniqueID: 0
     locked: 0
