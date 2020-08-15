@@ -341,7 +341,7 @@ PrefabInstance:
     - target: {fileID: 6164539001464841285, guid: 4ca448ada4a6a834fa1f09a611e75d55,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: -9
       objectReference: {fileID: 0}
     - target: {fileID: 6164539001464841285, guid: 4ca448ada4a6a834fa1f09a611e75d55,
         type: 3}
@@ -410,7 +410,7 @@ PrefabInstance:
     - target: {fileID: 5718656321095272586, guid: ef1e25813cb9d2c4c949838b0145626e,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: -9
       objectReference: {fileID: 0}
     - target: {fileID: 5718656321095272586, guid: ef1e25813cb9d2c4c949838b0145626e,
         type: 3}
@@ -474,7 +474,7 @@ PrefabInstance:
     - target: {fileID: 3908598031168137843, guid: 5f2fbccea7bed1d4d8a47372b50fe471,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: -9
       objectReference: {fileID: 0}
     - target: {fileID: 3908598031168137843, guid: 5f2fbccea7bed1d4d8a47372b50fe471,
         type: 3}
@@ -543,7 +543,7 @@ PrefabInstance:
     - target: {fileID: 828964046533724960, guid: f7ae218d1d7d5ed4dbf3ab994e16d9e6,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: -9
       objectReference: {fileID: 0}
     - target: {fileID: 828964046533724960, guid: f7ae218d1d7d5ed4dbf3ab994e16d9e6,
         type: 3}
@@ -778,7 +778,7 @@ PrefabInstance:
     - target: {fileID: 7706816856662381891, guid: 8015ed4fa1a6a9b408f998403e7585b1,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: -9
       objectReference: {fileID: 0}
     - target: {fileID: 7706816856662381891, guid: 8015ed4fa1a6a9b408f998403e7585b1,
         type: 3}
@@ -935,7 +935,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1961017961}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -3.634, y: -0.002, z: 0}
+  m_LocalPosition: {x: -3.904, y: -0.063, z: -9}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1223011957}
@@ -1241,6 +1241,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: TutorialManager
+      objectReference: {fileID: 0}
+    - target: {fileID: 9191893053959555125, guid: 2a09368a9caf9934cb4f870b2e7038b7,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9191893053959555126, guid: 2a09368a9caf9934cb4f870b2e7038b7,
         type: 3}

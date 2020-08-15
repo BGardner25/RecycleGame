@@ -4,10 +4,11 @@ using UnityEngine;
 
 public class ClickAndDrag : MonoBehaviour
 {
-    private Vector2 startPos;
+    private Vector3 startPos;
     private Rigidbody2D rigidBody2D;
     private SpriteRenderer sprite;
     public static bool hasBeenDropped = false;
+    private Vector2 mousePos;
 
     void Start()
     {
@@ -38,8 +39,8 @@ public class ClickAndDrag : MonoBehaviour
     {
         if (Time.timeScale != 0)
         {
-            Vector2 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-            transform.position = new Vector2(mousePos.x, mousePos.y);
+            mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+            transform.position = new Vector3(mousePos.x, mousePos.y, -9.0f);
         }
     }
 
