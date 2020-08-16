@@ -7,9 +7,9 @@ public class InfiniteItems : MonoBehaviour
     public int minNumItems = 4;
     public int maxNumItems = 8;
     public float flowMagnitude = 1.0f;
-    public float maxFlowMagnitude = 3.0f;
     public Vector3 spawnPos = new Vector3(-9.0f, -0.5f, -9.0f);
     ItemManager itemManager;
+    private float maxFlowMagnitude = 5.0f;
     private int spawnCount = 1;
 
     void Awake()
@@ -28,8 +28,11 @@ public class InfiniteItems : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (spawnCount % 4 == 0)
+        if (spawnCount % 6 == 0)
+        {
+            spawnCount = 1;
             IncreaseDifficulty();
+        }
         if (itemManager.GetLevelObjectCount() < minNumItems)
         {
             itemManager.SpawnRandomItem(spawnPos);
@@ -43,13 +46,9 @@ public class InfiniteItems : MonoBehaviour
             minNumItems++;
         if (flowMagnitude <= maxFlowMagnitude)
         {
+            Debug.Log("increasing difficulty");
             flowMagnitude += 0.2f;
             FindObjectOfType<BuoyancyScript>().SetFlowMagnitude(flowMagnitude);
         }
-    }
-
-    void SaveHighScore()
-    {
-        
     }
 }
