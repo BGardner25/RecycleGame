@@ -46,7 +46,6 @@ public class InfiniteItems : MonoBehaviour
             minNumItems++;
         if (flowMagnitude <= maxFlowMagnitude)
         {
-            Debug.Log("increasing difficulty");
             flowMagnitude += 0.2f;
             FindObjectOfType<BuoyancyScript>().SetFlowMagnitude(flowMagnitude);
         }

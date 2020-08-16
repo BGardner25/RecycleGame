@@ -237,7 +237,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 256, y: -150}
+  m_AnchoredPosition: {x: 274, y: -155}
   m_SizeDelta: {x: 90.78865, y: 82.52911}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &346740248
@@ -841,7 +841,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 9}
+  m_AnchoredPosition: {x: 0, y: 14}
   m_SizeDelta: {x: 714.7231, y: 464.128}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1254759053
@@ -865,7 +865,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: 02da182181262444293cac0d4906ad5e, type: 3}
-    m_FontSize: 38
+    m_FontSize: 32
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
@@ -876,9 +876,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "This level will continue forever until you lose all of your lives. It
-    will also get progressively harder over time. \n\nTry to get as high a score
-    as possible!"
+  m_Text: "You should play the main game before attempting this level.\nThis level
+    will continue forever until you lose all of your lives. It will also get progressively
+    harder over time. \n\nTry to get as high a score as possible!"
 --- !u!222 &1254759054
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1181,6 +1181,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: AudioManager
+      objectReference: {fileID: 0}
+    - target: {fileID: 510111562280918857, guid: 4bcdd819bbb4cc847b278958a78363ef,
+        type: 3}
+      propertyPath: m_TagString
+      value: Forest
       objectReference: {fileID: 0}
     - target: {fileID: 3175099045280180247, guid: 4bcdd819bbb4cc847b278958a78363ef,
         type: 3}

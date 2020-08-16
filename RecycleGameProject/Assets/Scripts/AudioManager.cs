@@ -35,7 +35,10 @@ public class AudioManager : MonoBehaviour
     void Start()
     {
         PlaySound("River");
-        PlaySound("Forest");
+        if (gameObject.tag == "Forest")
+            PlaySound("Forest");
+        else if (gameObject.tag == "City")
+            PlaySound("City");
     }
 
     public void PlaySound(string name)

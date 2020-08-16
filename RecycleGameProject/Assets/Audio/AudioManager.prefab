@@ -81,3 +81,9 @@ MonoBehaviour:
     volume: 0.4
     pitch: 1
     loop: 1
+  - name: AngryMan
+    audioClip: {fileID: 8300000, guid: a27fd82fe81e5f54ea83a449a3095768, type: 3}
+    aSrc: {fileID: 0}
+    volume: 1
+    pitch: 1
+    loop: 0

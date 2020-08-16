@@ -16,6 +16,13 @@ public class MainMenu : MonoBehaviour
         SceneManager.LoadScene("Level01");
     }
 
+    public void StartInfinite()
+    {
+        Time.timeScale = 1;
+        ScoreDisplay.score = 0;
+        SceneManager.LoadScene("InfiniteLevel");
+    }
+
     public void QuitGame()
     {
         Debug.Log("quit game");
