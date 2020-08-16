@@ -5,6 +5,7 @@ using UnityEngine;
 public class ItemManager : MonoBehaviour
 {
     public List<GameObject> levelObjects;
+    public List<GameObject> AllItems;
 
     // Start is called before the first frame update
     void Start()
@@ -35,5 +36,12 @@ public class ItemManager : MonoBehaviour
     {
         foreach (GameObject gObject in levelObjects)
             gObject.GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.None;
+    }
+
+    public void SpawnRandomItem(Vector3 spawnPos)
+    {
+        GameObject tempObject = Instantiate(AllItems[Random.Range(0, AllItems.Count)], transform.position + spawnPos, Quaternion.identity);
+        tempObject.transform.parent = transform;
+        levelObjects.Add(tempObject);
     }
 }

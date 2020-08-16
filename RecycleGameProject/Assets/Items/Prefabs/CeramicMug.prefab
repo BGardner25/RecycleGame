@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: -7121125935512420945}
   m_Layer: 9
   m_Name: CeramicMug
-  m_TagString: Ceramic
+  m_TagString: GeneralWaste
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
