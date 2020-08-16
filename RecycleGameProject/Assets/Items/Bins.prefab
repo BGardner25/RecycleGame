@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 3062768561484068346}
   - component: {fileID: 3819463329600756436}
   - component: {fileID: 2720762125721805136}
+  - component: {fileID: 3723413810031581363}
   m_Layer: 0
   m_Name: PaperBin
   m_TagString: Paper
@@ -71,7 +72,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: -1
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 223087655f41b304db79b1a53abbb07e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -121,6 +122,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 837a149d2a2809e44ad11b961246ccb6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  healthBar: {fileID: 0}
+  displayAnimation: {fileID: 0}
+--- !u!114 &3723413810031581363
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3062768561484068341}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2bff57dc67bf20147bcfcf742f6efbb3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mat: {fileID: 2100000, guid: 48d4031db6b0210458eedebb47dcccbd, type: 2}
+  offset: {x: -0.012, y: -0.012}
 --- !u!1 &3062768561708250982
 GameObject:
   m_ObjectHideFlags: 0
@@ -133,6 +150,7 @@ GameObject:
   - component: {fileID: 3062768561708250983}
   - component: {fileID: 3189754600267834975}
   - component: {fileID: 5230710613041819764}
+  - component: {fileID: 7928774524280212395}
   m_Layer: 0
   m_Name: PlasticBin
   m_TagString: Plastic
@@ -192,7 +210,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: -1
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 364b02c549400a74ebaa446bc7009949, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -242,6 +260,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 837a149d2a2809e44ad11b961246ccb6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  healthBar: {fileID: 0}
+  displayAnimation: {fileID: 0}
+--- !u!114 &7928774524280212395
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3062768561708250982}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2bff57dc67bf20147bcfcf742f6efbb3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mat: {fileID: 2100000, guid: 48d4031db6b0210458eedebb47dcccbd, type: 2}
+  offset: {x: -0.012, y: -0.012}
 --- !u!1 &3062768561770446351
 GameObject:
   m_ObjectHideFlags: 0
@@ -254,6 +288,7 @@ GameObject:
   - component: {fileID: 3062768561770446348}
   - component: {fileID: 8840378752674208513}
   - component: {fileID: 299089144407701918}
+  - component: {fileID: 5892940854095157564}
   m_Layer: 0
   m_Name: MetalBin
   m_TagString: Metal
@@ -313,7 +348,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: -1
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 0012e803185039143b1bfde4539b28da, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -363,6 +398,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 837a149d2a2809e44ad11b961246ccb6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  healthBar: {fileID: 0}
+  displayAnimation: {fileID: 0}
+--- !u!114 &5892940854095157564
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3062768561770446351}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2bff57dc67bf20147bcfcf742f6efbb3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mat: {fileID: 2100000, guid: 48d4031db6b0210458eedebb47dcccbd, type: 2}
+  offset: {x: -0.012, y: -0.012}
 --- !u!1 &3062768562258240691
 GameObject:
   m_ObjectHideFlags: 0
@@ -375,6 +426,7 @@ GameObject:
   - component: {fileID: 3062768562258240688}
   - component: {fileID: 2663899834118236072}
   - component: {fileID: 3844447661977008541}
+  - component: {fileID: 4651602117344064793}
   m_Layer: 0
   m_Name: GlassBin
   m_TagString: Glass
@@ -434,7 +486,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: -1
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 045c16d394ca0cc4ea690201aa6f7c75, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -484,6 +536,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 837a149d2a2809e44ad11b961246ccb6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  healthBar: {fileID: 0}
+  displayAnimation: {fileID: 0}
+--- !u!114 &4651602117344064793
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3062768562258240691}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2bff57dc67bf20147bcfcf742f6efbb3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mat: {fileID: 2100000, guid: 48d4031db6b0210458eedebb47dcccbd, type: 2}
+  offset: {x: -0.012, y: -0.012}
 --- !u!1 &3062768563446669444
 GameObject:
   m_ObjectHideFlags: 0
@@ -496,6 +564,7 @@ GameObject:
   - component: {fileID: 3062768563446669445}
   - component: {fileID: 4817204040618957430}
   - component: {fileID: 4987090913676657945}
+  - component: {fileID: 7777974374916171090}
   m_Layer: 0
   m_Name: GeneralWaste
   m_TagString: GeneralWaste
@@ -555,7 +624,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: -1
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: c1fe89075cc155048a2a8978b397033c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -605,6 +674,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 837a149d2a2809e44ad11b961246ccb6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  healthBar: {fileID: 0}
+  displayAnimation: {fileID: 0}
+--- !u!114 &7777974374916171090
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3062768563446669444}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2bff57dc67bf20147bcfcf742f6efbb3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mat: {fileID: 2100000, guid: 48d4031db6b0210458eedebb47dcccbd, type: 2}
+  offset: {x: -0.012, y: -0.012}
 --- !u!1 &5064887277578642418
 GameObject:
   m_ObjectHideFlags: 0

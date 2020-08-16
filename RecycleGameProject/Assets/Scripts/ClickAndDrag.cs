@@ -30,6 +30,8 @@ public class ClickAndDrag : MonoBehaviour
             rigidBody2D.gravityScale = 0.0f;
             gameObject.layer = LayerMask.NameToLayer("HeldItem");
             sprite.sortingOrder = 4;
+            if(transform.childCount > 0)
+                transform.GetChild(0).gameObject.SetActive(false);
         }
     }
 
@@ -57,6 +59,8 @@ public class ClickAndDrag : MonoBehaviour
                 sprite.sortingOrder = 2;
                 transform.position = startPos;
                 FindObjectOfType<AudioManager>().PlaySound("DropItem");
+                if (transform.childCount > 0)
+                    transform.GetChild(0).gameObject.SetActive(true);
             }
         }
     }

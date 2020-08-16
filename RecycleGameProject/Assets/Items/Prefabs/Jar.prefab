@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 1594398719746299544}
   - component: {fileID: 1594398719746299547}
   - component: {fileID: 1594398719746299546}
+  - component: {fileID: 2098888676713106022}
   m_Layer: 9
   m_Name: Jar
   m_TagString: Glass
@@ -144,3 +145,17 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &2098888676713106022
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1594398719746299548}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2bff57dc67bf20147bcfcf742f6efbb3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mat: {fileID: 2100000, guid: 48d4031db6b0210458eedebb47dcccbd, type: 2}
+  offset: {x: -0.012, y: -0.012}

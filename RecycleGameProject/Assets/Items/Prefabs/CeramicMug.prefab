@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 2361474433926887554}
   - component: {fileID: 2361474433926887555}
   - component: {fileID: 2361474433926887552}
+  - component: {fileID: -7121125935512420945}
   m_Layer: 9
   m_Name: CeramicMug
   m_TagString: Ceramic
@@ -144,3 +145,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a4db661ae678e64ea9d1cd0a84d120b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &-7121125935512420945
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2361474433926887614}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2bff57dc67bf20147bcfcf742f6efbb3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mat: {fileID: 2100000, guid: 48d4031db6b0210458eedebb47dcccbd, type: 2}
+  offset: {x: -0.012, y: -0.012}
