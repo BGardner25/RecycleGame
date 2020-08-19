@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-using UnityEditor;
 
 public class HealthBarScript : MonoBehaviour
 {
@@ -25,7 +24,9 @@ public class HealthBarScript : MonoBehaviour
         {
             clone = Instantiate(child.gameObject);
             clone.GetComponent<Image>().sprite = redHeart;
-            GameObjectUtility.SetParentAndAlign(clone, child.gameObject);
+            clone.transform.SetParent(child.gameObject.transform);
+            clone.transform.localPosition = gameObject.transform.localPosition + new Vector3(-58, -54, 0);
+            clone.transform.localScale = gameObject.transform.localScale;
             fallingHearts.Add(clone);
             healthBar.Add(child.gameObject);
         }
