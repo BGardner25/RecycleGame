@@ -45,8 +45,11 @@ public class GameOverScript : MonoBehaviour
     public void ResetLevel()
     {
         ScoreDisplay.score = 0;
-        scoreText.gameObject.SetActive(false);
-        highScoreText.gameObject.SetActive(false);
+        if (SceneManager.GetActiveScene().name == "InfiniteLevel")
+        {
+            scoreText.gameObject.SetActive(false);
+            highScoreText.gameObject.SetActive(false);
+        }
         GameOverUI.SetActive(false);
         MainUI.SetActive(true);
         // reset level score
