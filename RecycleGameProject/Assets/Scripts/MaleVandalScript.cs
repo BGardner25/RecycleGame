@@ -5,6 +5,7 @@ using UnityEngine;
 public class MaleVandalScript : MonoBehaviour
 {
     public Vector3 spawnPos;
+    public float startTime = 10.0f;
     public float throwTime = 2.5f;
     Animator anim;
     private bool isThrowing;
@@ -19,7 +20,7 @@ public class MaleVandalScript : MonoBehaviour
     {
         anim = GetComponent<Animator>();
         anim.speed = 0;
-        InvokeRepeating("ThrowItem", 15.0f, throwTime);
+        InvokeRepeating("ThrowItem", startTime, throwTime);
     }
 
     void OnMouseDown()
@@ -30,7 +31,7 @@ public class MaleVandalScript : MonoBehaviour
             FindObjectOfType<AudioManager>().PlaySound("AngryMan");
             CancelInvoke();
             anim.speed = 0;
-            InvokeRepeating("ThrowItem", 10.0f, throwTime);
+            InvokeRepeating("ThrowItem", startTime, throwTime);
         }
     }
 
@@ -45,5 +46,10 @@ public class MaleVandalScript : MonoBehaviour
     public bool GetIsThrowing()
     {
         return isThrowing;
+    }
+
+    public void SetStartTime(float startTime)
+    {
+        this.startTime = startTime;
     }
 }

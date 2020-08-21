@@ -8,6 +8,8 @@ public class InfiniteItems : MonoBehaviour
     public int maxNumItems = 8;
     public float flowMagnitude = 1.0f;
     public Vector3 spawnPos = new Vector3(-9.0f, -0.5f, -9.0f);
+    public MaleVandalScript nearVandal;
+    public MaleVandalScript farVandal;
     ItemManager itemManager;
     private float maxFlowMagnitude = 5.0f;
     private int spawnCount = 1;
@@ -42,8 +44,12 @@ public class InfiniteItems : MonoBehaviour
 
     void IncreaseDifficulty()
     {
-        if(minNumItems <= maxNumItems)
+        if (minNumItems <= maxNumItems)
+        {
+            nearVandal.SetStartTime(nearVandal.startTime - 2);
+            farVandal.SetStartTime(farVandal.startTime - 2);
             minNumItems++;
+        }
         if (flowMagnitude <= maxFlowMagnitude)
         {
             flowMagnitude += 0.2f;
